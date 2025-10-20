@@ -8,6 +8,6 @@ int main()
   float b;
   scanf("%f",&a);
    b =a*9/5+32;
-  printf("%f/n",b);
+  printf("%.1f/n",b);
   return 0;
 }
