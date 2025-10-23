@@ -12,11 +12,11 @@ int main()
  }
  else if (a + b> c&&a + c> b&&c + b>a )
  {
-    printf("能组成三角形");
+    printf("可以组成三角形");
  }
 else{
  
-     printf("不能形成三角形");
+     printf("不能组成三角形");
  }
  
     return 0;
