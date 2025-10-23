@@ -4,26 +4,26 @@
 #include <stdio.h>
 int main()
 {
-  double num1 ,num2;
+  int num1 ,num2;
   char op ;
   
   
-  scanf("%lf %c %lf",&num1, &op, &num2);
+  scanf("%d %d %c",&num1, &num2, &op);
 
   switch (op) 
   {
   case '+':
-       printf("%f+%f=%f\n", num1, num2, num1+num2);
+       printf("%d\n", num1 + num2);
     break;
   case '-':
-       printf("%f-%f=%f\n", num1, num2, num1-num2);                      
+       printf("%d\n", num1 - num2);                      
      break;
   case '*':
-       printf("%f*%f=%f\n", num1, num2, num1*num2);
+       printf("%d\n", num1 * num2);
      break;
   case '/':
        if (num2 !=0)
-           printf("%f/%f=%f\n", num1, num2, num1/num2);
+           printf("%d\n",  num1 / num2);
        else 
            printf("错误\n");
        break;
