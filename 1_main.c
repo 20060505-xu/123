@@ -26,7 +26,7 @@ for ( i = 2; i<=n/2; i++)
     
 }
 if(isPrime)
-  printf("密钥安全，密码设置成功\n");
+  printf("输出密钥安全，密码设置成功\n");
 else
   printf("密钥不安全，请重新输入\n");
 
