@@ -9,7 +9,7 @@ int isPrime=1;
 
 scanf("%d",&n);
 
-if(n<=1||n>=50)
+if(n<=1||n>50)
 {
     printf("输入无效");
     return 0;
