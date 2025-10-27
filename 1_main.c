@@ -1,13 +1,49 @@
 //202511716212
 //18108133961@163.com
 //徐任鸿
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-  float a;
-  float b;
-  scanf("%f",&a);
-   b =a*9/5+32;
-  printf("%.1f/n",b);
-  return 0;
+int n, i;
+int isPrime=1;
+
+scanf("%d",&n);
+
+if(n<=1||n>=50)
+{
+    printf("输入无效");
+    return 0;
 }
+for ( i = 2; i*i<=n; i++)
+{  
+     if (n%i==0)
+
+{
+    isPrime=0;
+    break;
+}
+
+    
+}
+if(isPrime)
+  printf("密钥安全，密码设置成功\n");
+else
+  printf("密钥不安全，请重新输入\n");
+
+  return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
