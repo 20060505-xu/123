@@ -1,40 +1,42 @@
 //202511716212
 //18108133961@163.com
 //徐任鸿
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-  int num1 ,num2;
-  char op ;
-  
-  
-  scanf("%d %d %c",&num1, &num2, &op);
+int n;
+int i=2;
+int isPrime=1;
 
-  switch (op) 
+scanf("%d",&n);
+
+if(n<=1||n>=50)
+{
+    printf("输入无效");
+    return 0;
+}
+while (i<n)
+{
+  if (n%i==0)
   {
-  case '+':
-       printf("%d\n", num1 + num2);
+    isPrime=0;
     break;
-  case '-':
-       printf("%d\n", num1 - num2);                      
-     break;
-  case '*':
-       printf("%d\n", num1 * num2);
-     break;
-  case '/':
-       if (num2 !=0)
-           printf("%d\n",  num1 / num2);
-       else 
-           printf("错误\n");
-       break;
-  default:
-      printf("无效运算符\n");
-    
   }
+  i++;
+}
+  
 
-         
 
- return 0;
+    
+
+if(isPrime)
+  printf("密钥安全，密码设置成功\n");
+else
+  printf("密钥不安全，请重新输入\n");
+
+  return 0;
+
+
 
 
 
@@ -48,3 +50,18 @@ int main()
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+ 
