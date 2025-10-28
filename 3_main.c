@@ -5,7 +5,7 @@
 int main()
 {
 int n;
-int i=2;
+int i;
 int isPrime=1;
 
 scanf("%d",&n);
