@@ -4,8 +4,7 @@
 #include<stdio.h>
 int main()
 {
-int n;
-int i;
+int n，i=2;
 int isPrime=1;
 
 scanf("%d",&n);
