@@ -1,27 +1,48 @@
 //202511716212
 //18108133961@163.com
 //徐任鸿
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
- int a, b, c;
- scanf("%d %d %d",&a, &b, &c);
- if (a<=0|| b<=0||c<=0)
- { 
-    printf("无效");
- }
- else if (a + b> c&&a + c> b&&c + b>a )
+ int i=100;
+ int a;
+ int b;
+ int c;
+ int flag=0;
+ while (i<=999)
  {
-    printf("可以组成三角形");
- }
-else{
+    a=i/100;
+    b=(i/10)%10;
+    c=i%10;
  
-     printf("不能组成三角形");
- }
  
-    return 0;
+ 
+    
+ 
+ if (i==a*a*a+b*b*b+c*c*c)
+ {
+    if (flag==0)
+    {
+    printf("%d" ,i);
+    flag=1;
+    }
+    else
+    {
+        printf(" %d", i);
+    }
+    
+ }
+ i++;
+}
+   return 0;
+ 
+ 
+ 
 
- 
+
+
+
+
 
 
 
