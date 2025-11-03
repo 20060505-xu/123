@@ -1,8 +1,6 @@
 //202511716212
 //18108133961@163.com
 //徐任鸿
-#include <stdio.h>
-
 int main() {
     int n, i;
     int isPrime = 1; // 假设是质数
@@ -32,6 +30,8 @@ int main() {
 
     return 0;
 }
+
+
 
 
 
