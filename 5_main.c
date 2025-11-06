@@ -2,18 +2,19 @@
 //18108133961@163.com
 //徐任鸿
 #include<stdio.h>
+int a(int a1 ,int an, int step)
+{
+int n=(an-a1)/step+1;
+int S=(a1+an)*n/2;
+return S;
+
+}
 int main()
 {
-    int a[5];
-    int sum = 0;
-    int i = 0;
-    for (i = 0; i < 4; i++)
-    {
-        scanf("%d", &a[i]);
-        sum += a[i];
-        printf("%d ", a[i]); 
-    }
-    a[4] = sum; 
-  printf("%d", a[4]); 
-    return 0;
+ int S=a(1,100,1);
+ printf("%d",S);
+ return 0;
+
+
+
 }
