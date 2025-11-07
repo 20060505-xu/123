@@ -2,52 +2,65 @@
 //18108133961@163.com
 //徐任鸿
 #include<stdio.h>
+void a(int arr[],int n)
+{
+int i;
+int temp;
+
+for ( i = 0; i <n/2; i++)
+{
+    temp=arr[i];
+    arr[i]=arr[n-1-i];
+    arr[n-1-i]=temp;
+
+    
+}
+}
 int main()
 {
- int a[5];
+ int arr[5];
  int i;
- for ( i = 0; i <4; i++)
+ for ( i = 0; i <5; i++)
  {
-    scanf("%d" ,&a[i]);
+    scanf("%d", &arr[i]);
  }
- for (i>4;i >0; i--)
- {
- a[i]=a[i-1];
- }
-
-    a[0]=0;
-    for (i = 0; i < 5; i++)
-    {
-        if (i==4)
-        {
-        printf("%d" ,a[i]);
-        } 
-        else{
-        printf("%d " ,a[i]);
-        }
-        
-    }
-    
-    
-    return 0;
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  a(arr,5);
+  for ( i = 0; i < 5; i++)
+  {
+    printf("%d ", arr[i]);
+  }
+  return 0;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
