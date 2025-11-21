@@ -1,28 +1,24 @@
 //202511716212
 //18108133961@163.com
 //徐任鸿
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-int a[3][3];
-
-for ( int i = 0; i < 3; i++)
-{
-    for (int j= 0; j<3; j++)
-    {
-        scanf("%d", &a[i][j]);
-    }
-    
-}
-for ( int i = 0; i <3; i++)
-{
-    for (int j= 0; j < 3; j++)
-    {
-        printf("%d ", a[i][j]);
-    }
-    printf("\n");
-}
+int a;
+scanf("%d", &a);
+int *p=&a;
+*p=*p+10;
+printf("%d,%d\n",a,*p);
 return 0;
+
+
+
+
+
+
+
+
+}
 
 
 
