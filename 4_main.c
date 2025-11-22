@@ -2,32 +2,28 @@
 //18108133961@163.com
 //徐任鸿
 #include <stdio.h>
-int power(int a, int b)
-{
- int result=1;
- for (int i = 0; i < b; i++)
- {
-    result *=a;
- }
- return result;
 
-
-
-
-
-}
-int main()
-{
-int sum=0;
-for (int  i = 0; i <=5; i++)
-{
-    sum +=power(i,2);
-}
-printf("%d",sum);
-return 0;
+void add_one(int *arr, int length) {
+    for (int i = 0; i < length; i++) {
+        *(arr + i) = *(arr + i) + 1;   // 指针方式访问数组
+    }
 }
 
+int main() {
+    int arr[5];
 
+    // 输入 5 个整数
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
 
+    // 调用函数，使数组每个元素自增
+    add_one(arr, 5);
 
+    // 输出结果
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
 
+    return 0;
+}
